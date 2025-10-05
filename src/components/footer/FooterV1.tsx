@@ -55,7 +55,6 @@ const FooterV1 = () => {
                                 </ul>
                                 <p>
                                     Copyright &copy; {new Date().getFullYear()}{" "}
-                                    Antux. All Rights Reserved
                                 </p>
                             </div>
                         </div>
