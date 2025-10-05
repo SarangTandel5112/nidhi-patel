@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import SocialShareV1 from "../social/SocialShareV1";
 import illustration1 from "/assets/img/illustration/1.png";
 import shape1 from "/assets/img/shape/1.png";

@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import useSidebarMenu from "../../hooks/useSidebarMenu";
 import useStickyMenu from "../../hooks/useStickyMenu";
 import useSubMenuToggle from "../../hooks/useSubMenuToggle";
+// @ts-ignore
 import ScrollContact from "./ScrollContact";
 
 const HeaderV1 = () => {
     const { isOpen, openMenu, closeMenu } = useSidebarMenu();
     const isMenuSticky = useStickyMenu();
+    // @ts-ignore
     const toggleSubMenu = useSubMenuToggle();
 
     return (

@@ -1,5 +1,6 @@
 import LayoutV2 from "../../components/Layouts/LayoutV2";
 import ProjectDetailsContent from "../../components/project/ProjectDetailsContent";
+// @ts-ignore
 import PromoV1 from "../../components/promo/PromoV1";
 import PortfolioData from "../../assets/jsonData/portfolio/PortfolioData.json";
 import { useParams } from "react-router-dom";

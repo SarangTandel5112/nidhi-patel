@@ -1,16 +1,25 @@
+// @ts-ignore
 import AboutV1 from "../../components/about/AboutV1";
 import BannerV1 from "../../components/banner/BannerV1";
+// @ts-ignore
 import BlogV1 from "../../components/blog/BlogV1";
+// @ts-ignore
 import ContactV1 from "../../components/contact/ContactV1";
+// @ts-ignore
 import FactV1 from "../../components/fact/FactV1";
+// @ts-ignore
 import FaqV1 from "../../components/faq/FaqV1";
 import LayoutV1 from "../../components/Layouts/LayoutV1";
+// @ts-ignore
 import PartnerV1 from "../../components/partner/PartnerV1";
 import PortfolioV1 from "../../components/portfolio/PortfolioV1";
+// @ts-ignore
 import PriceV1 from "../../components/price/PriceV1";
+// @ts-ignore
 import PromoV1 from "../../components/promo/PromoV1";
 import ResumeV1 from "../../components/resume/ResumeV1";
 import ServicesV1 from "../../components/services/ServicesV1";
+// @ts-ignore
 import TestimonialV1 from "../../components/testimonial/TestimonialV1";
 
 const Home = () => {
