@@ -1,11 +1,11 @@
-import xd from "/assets/img/icon/xd.png"
-import figma from "/assets/img/icon/figma.png"
-import wordpress from "/assets/img/icon/wordpress.png"
-import photoshop from "/assets/img/icon/photoshop.png"
-import diamon from "/assets/img/icon/diamon.png"
-import ai from "/assets/img/icon/ai.png"
-import CountUp from 'react-countup'
-import ReactWOW from "react-wow"
+import xd from "/assets/img/icon/xd.png";
+import figma from "/assets/img/icon/figma.png";
+import wordpress from "/assets/img/icon/wordpress.png";
+import photoshop from "/assets/img/icon/photoshop.png";
+import diamon from "/assets/img/icon/diamon.png";
+import ai from "/assets/img/icon/ai.png";
+import CountUp from "react-countup";
+import ReactWOW from "react-wow";
 
 const FactV1 = () => {
     return (
@@ -23,7 +23,6 @@ const FactV1 = () => {
                 </div>
                 <div className="container">
                     <div className="fun-fact-style-two-items text-center">
-
                         {/* Single item */}
                         <ReactWOW animation="fadeInUp">
                             <div className="funfact-style-two-item">
@@ -32,10 +31,15 @@ const FactV1 = () => {
                                 </div>
                                 <div className="fun-fact">
                                     <div className="counter">
-                                        <div className="timer"><CountUp end={80} enableScrollSpy={true} /></div>
+                                        <div className="timer">
+                                            <CountUp
+                                                end={95}
+                                                enableScrollSpy={true}
+                                            />
+                                        </div>
                                         <div className="operator">%</div>
                                     </div>
-                                    <span className="medium">Adobe XD</span>
+                                    <span className="medium">Google Ads</span>
                                 </div>
                             </div>
                         </ReactWOW>
@@ -48,10 +52,15 @@ const FactV1 = () => {
                                 </div>
                                 <div className="fun-fact">
                                     <div className="counter">
-                                        <div className="timer"><CountUp end={90} enableScrollSpy={true} /></div>
+                                        <div className="timer">
+                                            <CountUp
+                                                end={90}
+                                                enableScrollSpy={true}
+                                            />
+                                        </div>
                                         <div className="operator">%</div>
                                     </div>
-                                    <span className="medium">Figma</span>
+                                    <span className="medium">Meta Ads</span>
                                 </div>
                             </div>
                         </ReactWOW>
@@ -60,14 +69,22 @@ const FactV1 = () => {
                         <ReactWOW animation="fadeInUp" delay="200ms">
                             <div className="funfact-style-two-item">
                                 <div className="icon">
-                                    <img src={wordpress} alt="Image Not Found" />
+                                    <img
+                                        src={wordpress}
+                                        alt="Image Not Found"
+                                    />
                                 </div>
                                 <div className="fun-fact">
                                     <div className="counter">
-                                        <div className="timer"><CountUp end={70} enableScrollSpy={true} /></div>
+                                        <div className="timer">
+                                            <CountUp
+                                                end={85}
+                                                enableScrollSpy={true}
+                                            />
+                                        </div>
                                         <div className="operator">%</div>
                                     </div>
-                                    <span className="medium">WordPress</span>
+                                    <span className="medium">Shopify</span>
                                 </div>
                             </div>
                         </ReactWOW>
@@ -76,14 +93,22 @@ const FactV1 = () => {
                         <ReactWOW animation="fadeInUp" delay="300ms">
                             <div className="funfact-style-two-item wow fadeInUp">
                                 <div className="icon">
-                                    <img src={photoshop} alt="Image Not Found" />
+                                    <img
+                                        src={photoshop}
+                                        alt="Image Not Found"
+                                    />
                                 </div>
                                 <div className="fun-fact">
                                     <div className="counter">
-                                        <div className="timer"><CountUp end={80} enableScrollSpy={true} /></div>
+                                        <div className="timer">
+                                            <CountUp
+                                                end={80}
+                                                enableScrollSpy={true}
+                                            />
+                                        </div>
                                         <div className="operator">%</div>
                                     </div>
-                                    <span className="medium">Photoshop</span>
+                                    <span className="medium">HubSpot</span>
                                 </div>
                             </div>
                         </ReactWOW>
@@ -96,10 +121,17 @@ const FactV1 = () => {
                                 </div>
                                 <div className="fun-fact">
                                     <div className="counter">
-                                        <div className="timer"><CountUp end={60} enableScrollSpy={true} /></div>
+                                        <div className="timer">
+                                            <CountUp
+                                                end={75}
+                                                enableScrollSpy={true}
+                                            />
+                                        </div>
                                         <div className="operator">%</div>
                                     </div>
-                                    <span className="medium">Sketch</span>
+                                    <span className="medium">
+                                        LinkedIn Sales
+                                    </span>
                                 </div>
                             </div>
                         </ReactWOW>
@@ -112,10 +144,15 @@ const FactV1 = () => {
                                 </div>
                                 <div className="fun-fact">
                                     <div className="counter">
-                                        <div className="timer"><CountUp end={90} enableScrollSpy={true} /></div>
+                                        <div className="timer">
+                                            <CountUp
+                                                end={70}
+                                                enableScrollSpy={true}
+                                            />
+                                        </div>
                                         <div className="operator">%</div>
                                     </div>
-                                    <span className="medium">Illustrator</span>
+                                    <span className="medium">Canva</span>
                                 </div>
                             </div>
                         </ReactWOW>

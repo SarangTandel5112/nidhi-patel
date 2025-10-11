@@ -4,18 +4,21 @@ const SocialShareV1 = () => {
     return (
         <>
             <li>
-                <Link to="https://www.facebook.com" target='_blank'>
-                    <i className="fab fa-facebook" />
-                </Link>
-            </li>
-            <li>
-                <Link to="https://www.linkedin.com" target='_blank'>
+                <Link
+                    to="https://www.linkedin.com/in/nidhi-patel-marketing"
+                    target="_blank"
+                >
                     <i className="fab fa-linkedin-in" />
                 </Link>
             </li>
             <li>
-                <Link to="https://dribbble.com" target='_blank'>
-                    <i className="fab fa-dribbble" />
+                <Link to="mailto:patelnidhi7600@gmail.com" target="_blank">
+                    <i className="fas fa-envelope" />
+                </Link>
+            </li>
+            <li>
+                <Link to="tel:+12896232785" target="_blank">
+                    <i className="fas fa-phone" />
                 </Link>
             </li>
         </>

@@ -7,6 +7,7 @@ import BlogV1 from "../../components/blog/BlogV1";
 import ContactV1 from "../../components/contact/ContactV1";
 // @ts-ignore
 import FactV1 from "../../components/fact/FactV1";
+import SkillsV1 from "../../components/skills/SkillsV1";
 // @ts-ignore
 import FaqV1 from "../../components/faq/FaqV1";
 import LayoutV1 from "../../components/Layouts/LayoutV1";
@@ -29,6 +30,7 @@ const Home = () => {
                 <BannerV1 />
                 {/* <AboutV1 /> */}
                 <ServicesV1 sectionClass="default-padding" hasTitle={true} />
+                <SkillsV1 sectionClass="default-padding" />
                 <PortfolioV1
                     sectionClass="bg-gray default-padding"
                     hasTitle={true}

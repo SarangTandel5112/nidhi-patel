@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "activeClass": "",
+        "activeClass": "active",
         "icon": "1.png",
-        "title": "Digital Marketing",
-        "text": "Continue indulged speaking the was horrible for domestic position. Seeing get rather.",
+        "title": "Performance Marketing",
+        "text": "Expert in Google Ads and Meta Ads with proven track record of 14.78x ROAS and 7.16% CTR across campaigns.",
         "btnText": "Read More",
         "delay": "100ms"
     },
     {
         "id": 2,
-        "activeClass": "active",
+        "activeClass": "",
         "icon": "2.png",
-        "title": "App Development",
-        "text": "Continue indulged speaking the was horrible for domestic position. Seeing get rather.",
+        "title": "E-commerce Management",
+        "text": "Full-stack e-commerce expertise including Shopify development, Amazon Seller Central, and marketplace optimization.",
         "btnText": "Read More",
         "delay": "200ms"
     },
@@ -21,8 +21,8 @@
         "id": 3,
         "activeClass": "",
         "icon": "3.png",
-        "title": "UI/UX Design",
-        "text": "Continue indulged speaking the was horrible for domestic position. Seeing get rather.",
+        "title": "Social Media Marketing",
+        "text": "Scaled Instagram from 7K to 70K+ followers through strategic content, influencer partnerships, and community building.",
         "btnText": "Read More",
         "delay": "400ms"
     },
@@ -30,8 +30,8 @@
         "id": 4,
         "activeClass": "",
         "icon": "4.png",
-        "title": "Web Design",
-        "text": "Continue indulged speaking the was horrible for domestic position. Seeing get rather.",
+        "title": "Lead Generation & CRM",
+        "text": "Proficient in LinkedIn Sales Navigator, Apollo.io, HubSpot for lead management and customer relationship optimization.",
         "btnText": "Read More",
         "delay": "600ms"
     }

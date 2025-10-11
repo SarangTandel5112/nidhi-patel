@@ -20,6 +20,16 @@ const ScrollMenu: React.FC<DataType> = ({ closeMenu }) => {
             <li>
                 <Link
                     className="smooth-menu"
+                    to="skills"
+                    offset={-50}
+                    onClick={closeMenu}
+                >
+                    Skills
+                </Link>
+            </li>
+            <li>
+                <Link
+                    className="smooth-menu"
                     to="portfolio"
                     offset={-50}
                     onClick={closeMenu}
