@@ -2,12 +2,12 @@ import LayoutV2 from "../../components/Layouts/LayoutV2";
 import ProjectDetailsContent from "../../components/project/ProjectDetailsContent";
 // @ts-ignore
 import PromoV1 from "../../components/promo/PromoV1";
-import PortfolioData from "../../assets/jsonData/portfolio/PortfolioData.json";
+import PortfolioDetailData from "../../assets/jsonData/portfolio/portfolioDetail.json";
 import { useParams } from "react-router-dom";
 
 const ProjectDetailsPage = () => {
     const { id } = useParams();
-    const data = PortfolioData.find(
+    const data = PortfolioDetailData.find(
         (portfolio) => portfolio.id === parseInt(id || "0")
     );
 
@@ -15,7 +15,7 @@ const ProjectDetailsPage = () => {
         <>
             <LayoutV2
                 breadCrumb="project-details"
-                title="Digital marketing and analytical solution"
+                title={data?.title || "Project Details"}
             >
                 {data && <ProjectDetailsContent projectData={data} />}
                 {/* <PromoV1 /> */}
