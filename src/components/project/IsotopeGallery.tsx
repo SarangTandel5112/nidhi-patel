@@ -36,7 +36,7 @@ const IsotopeGallery = () => {
                 {PortfolioDetailData.map(portfolio => (
                     <div className="gallery-item" key={portfolio.id}>
                         <div className="gallery-style-one">
-                            <img src={`/assets/img/projects/${portfolio.thumb}`} alt="Thumb" onLoad={handleImageLoad} />
+                            <img src={`/assets/img/projects/${portfolio.thumbFull}`} alt="Thumb" onLoad={handleImageLoad} />
                             <div className="info">
                                 <div className="overlay">
                                     <div className="content">

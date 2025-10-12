@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import projects9 from "/assets/img/projects/9.jpg";
-import projects4 from "/assets/img/projects/4.jpg";
-import banner2 from "/assets/img/banner/2.jpg";
 
 interface ProjectData {
     id: number;
@@ -21,6 +18,7 @@ interface ProjectData {
 const ProjectDetailsContent = ({ projectData }: { projectData: ProjectData }) => {
     // Destructure fields safely (with optional chaining)
     const {
+        id,
         title,
         Service,
         Address,
@@ -30,6 +28,55 @@ const ProjectDetailsContent = ({ projectData }: { projectData: ProjectData }) =>
         ["The Solution"]: Solution,
         thumbFull,
     } = projectData;
+
+    // Function to get dynamic preview images based on project ID
+    const getPreviewImages = (projectId: number) => {
+        const basePath = "/assets/img/projects";
+        switch (projectId) {
+            case 1:
+                return [
+                    `${basePath}/mentor_matter/1.png`,
+                    `${basePath}/mentor_matter/2.png`,
+                    `${basePath}/mentor_matter/3.png`
+                ];
+            case 2:
+                return [
+                    `${basePath}/skyblue_stationery_mart/1.jpeg`,
+                    `${basePath}/skyblue_stationery_mart/2.jpeg`,
+                    `${basePath}/skyblue_stationery_mart/3.jpeg`,
+                    `${basePath}/skyblue_stationery_mart/4.jpeg`
+                ];
+            case 3:
+                return [
+                    `${basePath}/my_bageecha/1.png`,
+                    `${basePath}/my_bageecha/2.png`
+                ];
+            default:
+                return [
+                    `${basePath}/1-full.png`,
+                    `${basePath}/1-full.png`,
+                    `${basePath}/1-full.png`,
+                    `${basePath}/1-full.png`
+                ];
+        }
+    };
+
+    // Function to get Bootstrap column class based on image count
+    const getColumnClass = (imageCount: number) => {
+        switch (imageCount) {
+            case 2:
+                return "col-md-6";
+            case 3:
+                return "col-md-4";
+            case 4:
+                return "col-md-3";
+            default:
+                return "col-md-3";
+        }
+    };
+
+    const previewImages = getPreviewImages(id);
+    const columnClass = getColumnClass(previewImages.length);
 
     // Scroll-based image zoom effect
     const [scroll, setScroll] = useState(0);
@@ -52,7 +99,7 @@ const ProjectDetailsContent = ({ projectData }: { projectData: ProjectData }) =>
                             style={{ width: `${100 + scroll / 18}%` }}
                         >
                             <img
-                                src={thumbFull ? `/assets/img/projects/${thumbFull}` : projects9}
+                                src={`/assets/img/projects/${thumbFull}`}
                                 alt={title || "Project image"}
                             />
                         </div>
@@ -99,12 +146,11 @@ const ProjectDetailsContent = ({ projectData }: { projectData: ProjectData }) =>
                 <div className="container">
                     <div className="project-thumb mt-md--25 mt-xs--25">
                         <div className="row">
-                            <div className="col-md-7">
-                                <img src={projects9} alt="Preview 1" />
-                            </div>
-                            <div className="col-md-5">
-                                <img src={projects4} alt="Preview 2" />
-                            </div>
+                            {previewImages.map((imageSrc, index) => (
+                                <div key={index} className={columnClass}>
+                                    <img src={imageSrc} alt={`Preview ${index + 1}`} />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -135,11 +181,6 @@ const ProjectDetailsContent = ({ projectData }: { projectData: ProjectData }) =>
                                 </div>
                                 <div className="right-info">
                                     <p>{Challenges || "Challenge details not available."}</p>
-                                    <img
-                                        src={banner2}
-                                        alt="Challenges illustration"
-                                        className="mt-3"
-                                    />
                                 </div>
                             </div>
                         </div>
